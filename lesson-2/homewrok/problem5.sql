@@ -6,9 +6,9 @@ create table worker (
 bulk insert worker
 from 'C:\path\to\workers.csv'
 with (
-    firstrow = 2,               -- skip header row
-    fieldterminator = ',',      -- comma-separated
-    rowterminator = '\n',       -- newline for each row
+    firstrow = 2,               
+    fieldterminator = ',',     
+    rowterminator = '\n',       
     tablock
 );
 
